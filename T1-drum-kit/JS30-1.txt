@@ -1,0 +1,4 @@
+- setTimeOut function could be used for ending transition
+
+- similar function like transitionend can be used for animations
+
