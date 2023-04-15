@@ -59,3 +59,11 @@ html{
     font-size: 1.5rem;
     color: palevioletred;
 }
+
+
+@media screen and (max-width:500px)
+{
+.container{
+    transform: scale(0.6);
+}
+}
