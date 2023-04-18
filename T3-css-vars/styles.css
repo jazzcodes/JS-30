@@ -11,7 +11,7 @@ html{
 
 :root{
     --baseColor: #000000;
-    --blur:10px;
+    --blur:0px;
     --spacing:10px;
 }
 
