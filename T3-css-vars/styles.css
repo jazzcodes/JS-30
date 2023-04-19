@@ -40,3 +40,22 @@ h1{
 .highlighter{
     color: var(--baseColor);
 }
+
+
+@media screen and (max-width:550px)
+{
+
+
+    img{
+        width:300px;
+
+    }
+
+    h1{
+        min-width: 284px;
+        max-width:284px;
+        
+    } 
+
+
+}
