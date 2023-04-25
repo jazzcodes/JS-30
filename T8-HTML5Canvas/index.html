@@ -5,8 +5,12 @@
   <title>HTML5 Canvas</title>
 </head>
 <body>
-<canvas id="draw" width="800" height="800"></canvas>
+<canvas id="draw" width="800" height="800">
+
+</canvas>
 <script>
+
+    alert('This is only for desktop users for now, Drag the cursor and see the magic ');
     const canvas=document.querySelector('#draw');
     const ctx=canvas.getContext('2d');
     canvas.width=window.innerWidth;
@@ -80,6 +84,15 @@
 
   canvas{
     background-color: black;
+  }
+
+  h2{
+    color:hotpink;
+
+  }
+
+  h1{
+    color:white;
   }
 </style>
 
