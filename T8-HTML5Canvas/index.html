@@ -34,20 +34,26 @@
 </canvas>
 <script>
 
-    alert('Drag the cursor and see the magic!');
 
-   
 
-    if(window.innerWidth<400)
-    {
-      alert('This is only for desktop users for now.');
-    }
 
 
     const canvas=document.querySelector('#draw');
     const ctx=canvas.getContext('2d');
     canvas.width=window.innerWidth;
     canvas.height=window.innerHeight;
+
+
+       
+
+    if(canvas.innerWidth<400)
+    {
+      alert('This is only for desktop users for now.');
+    }
+    else{
+      alert('Drag the cursor and see the magic!');
+    }
+
 
     ctx.strokeStyle="pink";
     ctx.lineCap="round";
