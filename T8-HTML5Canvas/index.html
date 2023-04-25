@@ -44,15 +44,24 @@
     canvas.height=window.innerHeight;
 
 
-       
+function myFunction(x) {
+  if (x.matches) {
+    alert('Drag the cursor and see the magic!');
+ 
+  } else {
+    alert('This is only for desktop users for now.');
+  }
+}
 
-    if(canvas.innerWidth<400)
-    {
-      alert('This is only for desktop users for now.');
-    }
-    else{
-      alert('Drag the cursor and see the magic!');
-    }
+
+const mmObj = window.matchMedia("(min-width: 400px)")
+
+myFunction(mmObj);
+
+mmObj.addListener(myFunction);
+   
+
+
 
 
     ctx.strokeStyle="pink";
