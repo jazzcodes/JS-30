@@ -1,0 +1,61 @@
+*{
+    border:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    height: 100vh;
+}
+
+:root{
+    --baseColor: #000000;
+    --blur:0px;
+    --spacing:10px;
+}
+
+
+img{
+    width:500px;
+    margin:2rem;
+    margin-top: 1rem;
+    padding:var(--spacing);
+    background-color: var(--baseColor);
+    filter: blur(var(--blur));
+}
+
+.controls{
+    margin:2rem;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+h1{
+    margin:2rem;
+
+}
+
+.highlighter{
+    color: var(--baseColor);
+}
+
+
+@media screen and (max-width:550px)
+{
+
+
+    img{
+        width:300px;
+
+    }
+
+    h1{
+        min-width: 284px;
+        max-width:284px;
+        
+    } 
+
+
+}
